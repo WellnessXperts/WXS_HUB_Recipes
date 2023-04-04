@@ -1,0 +1,9 @@
+{
+  "id": "wellnessxperts-community",
+  "name": "WellnessXperts Academy",
+  "version": "1.0.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://community.wellnessxperts.com"
+  }
+}

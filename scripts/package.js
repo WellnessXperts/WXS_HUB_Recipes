@@ -279,6 +279,10 @@ const compress = (src, dest) =>
     // Package to .tar.gz
     compress(recipeSrc, path.join(outputFolder, `${config.id}.tar.gz`));
 
+    const ourRecipes = ['boards', 'myherbalife', 'wellnessxperts-community', 'wellnessxperts-ionic', 'wellnessxperts-ionic-beta'];
+
+    const svgURI = (ourRecipes.includes(config.id)) ? `https://media.wxsweb.com/${config.id}-icon.svg` : `${repo}${config.id}/icon.svg`;
+
     // Add recipe to all.json
     const isFeatured = featuredRecipes.includes(config.id);
     const packageInfo = {
@@ -288,7 +292,7 @@ const compress = (src, dest) =>
       version: config.version,
       aliases: config.aliases,
       icons: {
-        svg: `${repo}${config.id}/icon.svg`,
+        svg: svgURI,
       },
     };
     recipeList.push(packageInfo);

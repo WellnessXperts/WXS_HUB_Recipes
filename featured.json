@@ -1,18 +1,15 @@
 [
+  "boards",
   "discord",
-  "gitter",
+  "facebook",
   "gmail",
-  "google-calendar",
-  "hangouts",
-  "mattermost",
+  "googlecalendar",
+  "instagram",
   "messenger",
-  "msteams",
-  "proton-mail",
-  "slack",
+  "myherbalife",
   "skype",
   "telegram",
-  "tweetdeck",
-  "trello",
-  "whatsapp",
-  "wechat"
+  "wellnessxperts-community",
+  "wellnessxperts-ionic",
+  "whatsapp"
 ]
