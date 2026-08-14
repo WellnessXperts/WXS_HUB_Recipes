@@ -1,9 +1,0 @@
-{
-  "id": "boards",
-  "name": "Boards",
-  "version": "1.0.0",
-  "license": "MIT",
-  "config": {
-    "serviceURL": "https://app.boards.com"
-  }
-}

@@ -330,7 +330,6 @@ const compress = (src, dest) =>
     // Recipes we author ourselves serve their icons from our own CDN rather
     // than from the upstream recipes repo.
     const ourRecipes = new Set([
-      'boards',
       'myherbalife',
       'wellnessxperts-community',
       'wellnessxperts-ionic',
