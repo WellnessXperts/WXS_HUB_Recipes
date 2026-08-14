@@ -16,8 +16,13 @@ const pkgVersionChangedMatcher = /\n\+.*version.*/;
 
 // Publicly availible link to this repository's recipe folder
 // Used for generating public icon URLs
+//
+// Points at our own fork rather than upstream. This repo is public and holds
+// every recipe, upstream ones included, so one source serves them all - and
+// updating an icon becomes a commit here rather than a separate upload to
+// media.wxsweb.com, which is why the old icons never changed when the repo did.
 const repo =
-  'https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/';
+  'https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/';
 
 // Helper: Compress src folder into dest file
 const compress = (src, dest) =>
@@ -327,17 +332,6 @@ const compress = (src, dest) =>
       path.join(outputFolder, `${config.id}.tar.gz`),
     );
 
-    // Recipes we author ourselves serve their icons from our own CDN rather
-    // than from the upstream recipes repo.
-    const ourRecipes = new Set([
-      'myherbalife',
-      'wellnessxperts-ionic',
-      'wellnessxperts-ionic-beta',
-    ]);
-    const svgURI = ourRecipes.has(config.id)
-      ? `https://media.wxsweb.com/${config.id}-icon.svg`
-      : `${repo}${config.id}/icon.svg`;
-
     // Add recipe to all.json
     const isFeatured = featuredRecipes.includes(config.id);
     const packageInfo = {
@@ -347,7 +341,7 @@ const compress = (src, dest) =>
       version: config.version,
       aliases: config.aliases,
       icons: {
-        svg: svgURI,
+        svg: `${repo}${config.id}/icon.svg`,
       },
     };
     recipeList.push(packageInfo);
