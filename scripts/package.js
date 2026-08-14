@@ -327,6 +327,19 @@ const compress = (src, dest) =>
       path.join(outputFolder, `${config.id}.tar.gz`),
     );
 
+    // Recipes we author ourselves serve their icons from our own CDN rather
+    // than from the upstream recipes repo.
+    const ourRecipes = new Set([
+      'boards',
+      'myherbalife',
+      'wellnessxperts-community',
+      'wellnessxperts-ionic',
+      'wellnessxperts-ionic-beta',
+    ]);
+    const svgURI = ourRecipes.has(config.id)
+      ? `https://media.wxsweb.com/${config.id}-icon.svg`
+      : `${repo}${config.id}/icon.svg`;
+
     // Add recipe to all.json
     const isFeatured = featuredRecipes.includes(config.id);
     const packageInfo = {
@@ -336,7 +349,7 @@ const compress = (src, dest) =>
       version: config.version,
       aliases: config.aliases,
       icons: {
-        svg: `${repo}${config.id}/icon.svg`,
+        svg: svgURI,
       },
     };
     recipeList.push(packageInfo);
