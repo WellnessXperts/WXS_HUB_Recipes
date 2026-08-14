@@ -1,7 +1,7 @@
 {
   "id": "wellnessxperts-ionic-beta",
-  "name": "WellnessXperts Beta",
-  "version": "1.0.0",
+  "name": "SW Beta",
+  "version": "1.1.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://beta.wellnessxperts.com"

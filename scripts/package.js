@@ -331,7 +331,6 @@ const compress = (src, dest) =>
     // than from the upstream recipes repo.
     const ourRecipes = new Set([
       'myherbalife',
-      'wellnessxperts-community',
       'wellnessxperts-ionic',
       'wellnessxperts-ionic-beta',
     ]);
