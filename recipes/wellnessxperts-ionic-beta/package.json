@@ -1,9 +1,0 @@
-{
-  "id": "wellnessxperts-ionic-beta",
-  "name": "WXS ONE Beta",
-  "version": "1.2.0",
-  "license": "MIT",
-  "config": {
-    "serviceURL": "https://beta.wellnessxperts.com"
-  }
-}
