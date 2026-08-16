@@ -3392,7 +3392,7 @@
     }
   },
   {
-    "featured": false,
+    "featured": true,
     "id": "telegram",
     "name": "Telegram",
     "version": "3.4.5",
