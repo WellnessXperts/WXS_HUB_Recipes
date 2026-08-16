@@ -3320,6 +3320,24 @@
     }
   },
   {
+    "featured": true,
+    "id": "system-w",
+    "name": "System W",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/system-w/icon.svg"
+    }
+  },
+  {
+    "featured": false,
+    "id": "system-w-beta",
+    "name": "System W Beta",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/system-w-beta/icon.svg"
+    }
+  },
+  {
     "featured": false,
     "id": "taiga",
     "name": "Taiga",
@@ -3771,24 +3789,6 @@
     "version": "1.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/weekplan/icon.svg"
-    }
-  },
-  {
-    "featured": true,
-    "id": "wellnessxperts-ionic",
-    "name": "System W",
-    "version": "1.1.0",
-    "icons": {
-      "svg": "https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/wellnessxperts-ionic/icon.svg"
-    }
-  },
-  {
-    "featured": false,
-    "id": "wellnessxperts-ionic-beta",
-    "name": "SW Beta",
-    "version": "1.1.0",
-    "icons": {
-      "svg": "https://cdn.jsdelivr.net/gh/WellnessXperts/WXS_HUB_Recipes@wxs-hub/recipes/wellnessxperts-ionic-beta/icon.svg"
     }
   },
   {
