@@ -1,0 +1,9 @@
+{
+  "id": "system-w",
+  "name": "System W",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.systemw.ai"
+  }
+}

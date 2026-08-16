@@ -1,0 +1,9 @@
+{
+  "id": "system-w-beta",
+  "name": "System W Beta",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://beta.systemw.ai"
+  }
+}
