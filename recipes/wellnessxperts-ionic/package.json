@@ -1,7 +1,7 @@
 {
   "id": "wellnessxperts-ionic",
-  "name": "System W",
-  "version": "1.1.0",
+  "name": "WXS ONE",
+  "version": "1.2.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://web.wellnessxperts.com"
